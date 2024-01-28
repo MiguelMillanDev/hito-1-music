@@ -1,0 +1,8 @@
+{
+  "name": "Hito-1-Music",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular",
+  "id": "bef59a7a"
+}
