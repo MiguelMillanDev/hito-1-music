@@ -3,6 +3,26 @@
 
 /** Ionic CSS Variables **/
 :root {
+  ion-content {
+    --ion-background-color: var(--background);
+  }
+  
+  ion-card {
+    border-radius: var(--border-radius);
+  }
+  
+  ion-item {
+    --ion-background-color: var(--ion-input-background);
+    --ion-color: var(--ion-input-color);
+    border-radius: var(--border-radius);
+  }
+  
+  ion-button {
+    --ion-background-color: var(--ion-background-color);
+    --ion-text-color: var(--ion-text-color);
+    --ion-border-color: var(--ion-border-color);
+    border-radius: var(--border-radius);
+  }
   /** primary **/
   --ion-color-primary: #3880FF;
   --ion-color-primary-rgb: 56, 128, 255;
@@ -75,6 +95,8 @@
   --ion-color-light-shade: #d7d8da;
   --ion-color-light-tint: #f5f6f9;
 }
+
+
 
 @media (prefers-color-scheme: dark) {
   /*

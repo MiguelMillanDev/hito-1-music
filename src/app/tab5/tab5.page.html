@@ -1,0 +1,60 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Perfil</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <!-- Sección de Información del Perfil -->
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>{{ userProfile.name }}</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+            <ion-item>
+              <ion-label>Canciones Favoritas</ion-label>
+              <ion-badge>{{ userProfile.favoriteSongs.length }}</ion-badge>
+            </ion-item>
+          </ion-col>
+          <ion-col>
+            <ion-item>
+              <ion-label>Mis Canciones</ion-label>
+              <ion-badge>{{ userProfile.mySongs.length }}</ion-badge>
+            </ion-item>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-card-content>
+  </ion-card>
+
+  <!-- Sección de Canciones Favoritas -->
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Canciones Favoritas</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-list>
+        <ion-item *ngFor="let song of userProfile.favoriteSongs">
+          {{ song }}
+        </ion-item>
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+
+  <!-- Sección de Mis Canciones -->
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Mis Canciones</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-list>
+        <ion-item *ngFor="let song of userProfile.mySongs">
+          {{ song }}
+        </ion-item>
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

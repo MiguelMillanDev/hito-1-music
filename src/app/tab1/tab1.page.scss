@@ -1,0 +1,49 @@
+.login-content {
+  --background: #121212; // Fondo del encabezado
+  --ion-color-primary: #1db954; // Color principal para resaltar
+    --ion-color-primary-rgb: 29, 185, 84;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .login-image {
+    width: 200px;
+    height: auto;
+    max-width: 350px;
+    padding: 1rem;
+    margin: auto; /* Esto centrará la imagen horizontal y verticalmente */
+   
+  }
+  
+  
+  .login-card {
+    width: 100%; /* Ocupa el 100% del ancho disponible */
+    height: auto;
+    background-color: #121212;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    border: 1px solid #ccc; /* Ancho y color del borde */
+    border-radius: 10px 10px 0 0;
+  }
+  
+  .login-input {
+    --ion-input-background: #1e1e1e;
+    --ion-input-color: #fff;
+    margin-bottom: 15px;
+    padding: 1rem;
+    border-radius: 10px 10px 0 0;
+  }
+  
+  .login-button {
+    --ion-background-color: #1db954;
+    --ion-text-color: #fff;
+    --ion-border-color: #1db954;
+    margin-top: 15px;
+    padding: 1rem;
+    border-radius: 10px 10px 0 0;
+  }
+  

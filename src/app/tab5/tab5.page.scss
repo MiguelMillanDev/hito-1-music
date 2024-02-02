@@ -1,0 +1,51 @@
+ion-header {
+    ion-toolbar {
+      --background: #121212; // Fondo del encabezado
+      --ion-color-primary: #1db954; // Color principal para resaltar el texto
+    }
+  }
+  
+  ion-content {
+    --background: #121212; // Fondo del contenido
+    --ion-color-primary: #1db954; // Color principal para resaltar el texto
+  
+    ion-card {
+      background-color: #1e1e1e; // Fondo de la tarjeta
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.6);
+      border-radius: 10px; // Radio de la esquina del borde
+      margin-bottom: 20px; // Márgenes inferiores de la tarjeta
+    }
+  
+    ion-card-header {
+      ion-card-title {
+        color: #1db954; // Color del título de la tarjeta
+      }
+    }
+  
+    ion-item {
+      --ion-background-color: #333; // Fondo del elemento
+      border-radius: 5px; // Radio de la esquina del borde
+  
+      ion-label {
+        color: #fff; // Color del texto de la etiqueta
+      }
+  
+      ion-badge {
+        --background: #1db954; // Color de fondo de la insignia
+        --color: #fff; // Color del texto de la insignia
+        margin-left: 5px; // Márgenes izquierdos de la insignia
+      }
+    }
+  
+    ion-list {
+      ion-item {
+        --ion-background-color: #333; // Fondo del elemento en la lista
+        border-radius: 5px; // Radio de la esquina del borde
+  
+        span {
+          color: #fff; // Color del texto de la lista
+        }
+      }
+    }
+  }
+  

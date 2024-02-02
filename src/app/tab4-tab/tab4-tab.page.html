@@ -1,0 +1,77 @@
+<!-- subir-cancion.page.html -->
+
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Sube Tu Canción</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Detalles de la Canción</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      <form (ngSubmit)="onSubmit()">
+        <ion-item>
+          <ion-label position="floating">Nombre de la Canción</ion-label>
+          <ion-input
+            type="text"
+            [(ngModel)]="songName"
+            name="songName"
+            required
+          ></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label position="floating">Artista</ion-label>
+          <ion-input
+            type="text"
+            [(ngModel)]="artist"
+            name="artist"
+            required
+          ></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label position="floating">Álbum</ion-label>
+          <ion-input type="text" [(ngModel)]="album" name="album"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label position="floating">Año de Lanzamiento</ion-label>
+          <ion-input
+            type="number"
+            [(ngModel)]="releaseYear"
+            name="releaseYear"
+          ></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label position="stacked"
+            >Selecciona una Imagen de Portada</ion-label
+          >
+          <input
+            type="file"
+            (change)="onImageSelected($event)"
+            accept="image/*"
+          />
+        </ion-item>
+
+        <ion-item>
+          <ion-label position="stacked">Selecciona la Canción</ion-label>
+          <input
+            type="file"
+            (change)="onSongSelected($event)"
+            accept="audio/*"
+          />
+        </ion-item>
+
+        <ion-button expand="full" type="submit" color="success"
+          >Subir Canción</ion-button
+        >
+      </form>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
